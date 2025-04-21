@@ -2,11 +2,7 @@
 
 using namespace std;
 
-int main() {
-    int amount;
-    cout << "Enter the amount of stars: ";
-    cin >> amount;
-
+void romboid(int amount){
     if (amount % 2 == 0) {
         amount += 1;
     }
@@ -20,7 +16,7 @@ int main() {
             if (col >= left && col <= right) {
                 cout << "*";
             } else {
-                cout << "1";
+                cout << " ";
             }
         }
 
@@ -35,6 +31,21 @@ int main() {
 
         cout << endl;
     }
+}
 
+void spiral(int amount){
+
+}
+
+int main() {
+    int amount;
+    cout << "Enter the amount of stars: ";
+    cin >> amount;
+
+
+
+
+    spiral(amount);
+    romboid(amount);
     return 0;
 }
