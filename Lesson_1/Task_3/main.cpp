@@ -36,13 +36,13 @@ void romboid(int amount) {
 void spiral(int size) {
     for (int row = 0; row < size; ++row) {
         for (int col = 0; col < size; ++col) {
-            // Отразить координаты в левый верхний квадрант
+            
             int mirrored_col = col;
             int mirrored_row = row;
             if (mirrored_col >= size / 2) mirrored_col = size - mirrored_col - 1;
             if (mirrored_row >= size / 2) mirrored_row = size - mirrored_row - 1;
 
-            // Вычислить расстояние от центра
+            
             int dist_to_center_col = abs(mirrored_col - size / 2);
             int dist_to_center_row = abs(mirrored_row - size / 2);
             int distance_from_center = max(dist_to_center_col, dist_to_center_row);
